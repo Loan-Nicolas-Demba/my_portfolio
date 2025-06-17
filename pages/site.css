@@ -1,0 +1,314 @@
+/*SITE*/
+
+html {
+  height: 100vh;
+}
+
+.contactFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header*/
+nav ul li a img {
+  vertical-align: middle;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.main-content {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+}
+
+.profile {
+  flex: 3;
+  background: #66cc99;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.skills {
+  flex: 1;
+  background: #66CC99;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skill-category {
+  margin-bottom: 15px;
+}
+
+.skill-category h3 {
+  margin-bottom: 10px;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.bottom-section {
+  display: flex;
+  margin-top: 40px;
+  background: #e0e0e0;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.bottom-text {
+  flex: 1;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.carousel {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d0d0d0;
+  border-radius: 8px;
+}
+
+.carousel img {
+  width: 150px;
+  height: 150px;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Assure que le header soit au-dessus du reste du contenu */
+  
+}
+header ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #66cc99;
+  border-radius: 5px;
+  margin: 0;
+}
+
+header > ul > li{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  color: black  ;
+}
+
+a {
+  color: #050113;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+a:hover {
+  color: white;
+}
+
+/*Body*/
+
+body {
+  height: 100vh;
+  background-color: #050113;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5%;
+  color: aliceblue;
+}
+
+
+/*Footer*/
+
+
+
+
+
+/*ACCUEIL*/
+section> div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div > p:first-child {
+    font-size: x-large;
+}
+
+section > div > p:nth-child(2) {
+    color: gray;
+}
+
+
+body > div{
+  size: 1000px;
+  display: flex;
+  justify-content: end;
+}
+
+
+#other-projects a {
+  color : white;
+}
+
+
+
+/*Carroussel*/
+
+/* Styling the area of the slides */
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Style each of the sides 
+with a fixed width and height */
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+h1{
+  margin: 0;
+}
+/* Add animation to the slides */
+
+.slide-wrapper {
+   
+  /* Calculate the total width on the
+basis of number of slides */
+  width: calc(728px * 4);
+   
+  /* Specify the animation with the
+duration and speed */
+  animation: slide 15s ease infinite;
+}
+
+/* Set the background color
+of each of the slides */
+
+.slide:nth-child(1) img {
+  size-adjust: auto;
+  border-radius: 10px;
+}
+
+
+/* Define the animation 
+for the slideshow */
+
+@keyframes slide {
+   
+  /* Calculate the margin-left for 
+each of the slides */
+  20% {
+      margin-left: 0px;
+  }
+  40% {
+      margin-left: calc(-728px * 1);
+  }
+  60% {
+      margin-left: calc(-728px * 2);
+  }
+  80% {
+      margin-left: calc(-728px * 3);
+  }
+}
+
+
+
+/*PROJET*/
+
+body > section > section{
+  display: flex;
+  flex-direction: column;
+}
+
+body > section > h1 {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  margin-top: 1%;
+}
+
+body > section > section > div{
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: space-around;
+  align-items:center;
+}
+
+body > section > section > div > p{
+  width: 25%;
+  color: white;
+}
+
+body > section > section > div:nth-child(2){
+  flex-direction: row-reverse;
+}
+
+body > section > section > div:nth-child(4){
+  flex-direction: row-reverse;
+}
+.colored-line {
+  border: none;         /* Remove the default border */
+  height: 0.1px;          /* Set the height of the line */
+  background-color: #66cc99;  /* Set the color of the line */
+  margin-top: 20px 0;       /* Add some margin around the line */
+  margin-bottom: 20px 0;
+}
+
+/*CONTACT*/ 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+.aaa {
+  padding: 0;
+}

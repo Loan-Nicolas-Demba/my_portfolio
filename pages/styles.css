@@ -1,0 +1,118 @@
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Assure que le header soit au-dessus du reste du contenu */
+    }
+  header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #66cc99;
+    border-radius: 5px;
+    margin: 0;
+  }
+  
+  header > ul > li{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  
+  a {
+    color: #050113;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  a:hover {
+    color: white;
+  }
+
+  /*Body*/
+  
+  body {    
+    background-color: #050113;
+    font-family: 'Open Sans', sans-serif;   
+    color: aliceblue;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+
+
+/*CONTACT*/ 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the container takes up the full height of the viewport */
+  }
+
+  .name-Email {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bg {
+    
+    border-radius: 15px;;
+    padding: 30px;
+    border-style: solid;
+    border-color: #66cc99;
+    border-width: 2px;
+    width: 950px; /* Largeur souhaitée */
+    height: 650px; /* Hauteur souhaitée */
+  }
+
+  .bg div { 
+    width: 450px; /* Largeur souhaitée */
+    height: 100px; /* Hauteur souhaitée */
+}
+
+p {
+  font-size: x-large;
+}
+
+.Admail { 
+  color: #050113  ;
+  font-size: small  ;
+  background-color: #66cc99;
+  width: fit-content;
+  padding: 5px;   
+  border-radius: 150px;
+}
+
+
+button {
+  margin-top: 69px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #66cc99;
+}
+
+button:hover{
+  color: white;
+}
+
+.label {
+  width: 200px;
+}
+
+.message {
+  width: 450px; 
+ height: 100px;
+}
+
+.nom {
+  margin-right: 50px;
+}
