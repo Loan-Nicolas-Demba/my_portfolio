@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <title>Classement de dépêches</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="projet-detail.css">
+    </head>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../host.html"><img src="../../images/accueil.png" alt="Home Icon"> Home</a></li>
+                <li><a href="../projet.html"><img src="../../images/file-and-folder.png" alt="Projects Icon"> Projects</a></li>
+                <li><a href="../contact.html"><img src="../../images/contact.png" alt="Contact Icon"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        
+        <script src="https://corentinballaz-dev.github.io/frogcast-widget/WeatherWidget.js" defer></script>
+
+        <main>
+            <h1>Widget de prévision météo.</h1>
+
+            <div class="project-detail">
+            <div class="left">
+                <weather-widget
+                    widget-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNTEyIiwidHlwZSI6IndpZGdldCIsImNsaWVudF9uYW1lIjoiTG9hbl9OaWNvbGFzX0RlbWJhIiwiZG9tYWluIjpudWxsLCJpYXQiOjE3ODIzNzcxODR9.DVNXGKXzLnq5ELJrZHzbE9PKmKHEzmHvwb9uoNhgXBU"
+                    main-color="#033C40"
+                    day-amount="3"
+                    temp-unit="c"
+                    wind-unit="kmh"
+                    time-format="24h"
+                    precip-unit="mm">
+                    <a slot="branding" href="https://frogcast.com" target="_blank" rel="noopener noreferrer"> <!-- Replace frogcast.com with a link to the page  -->
+                        Powered by FROGCAST API
+                    </a>
+                </weather-widget>
+            </div>
+            <div class="right">
+                <h2>Objectif :</h2>
+                <p>Développer un widget météo public pour améliorer la visibilité du site Quos Group et mettre en valeur ses services de prévision.</p>
+                <h2>Description :</h2>
+                <p>Widget météo développé en Web Component avec JavaScript, affichant des prévisions sur plusieurs jours à partir de l’API Frogcast.</p>
+                <h2>Compétences :</h2>
+                <ul>
+                    <li>Développement web</li>
+                    <li>Traitement de données</li>
+                    <li>Conception d’interface</li>
+                    <li>Manipulation de token API</li>
+                </ul>
+            </div>
+            </div>
+
+            <section class="project-section">
+            <h2>Travail réalisé :</h2>
+            <p>Conception et développement d’un widget météo sécurisé et personnalisable.</p>
+
+            <h3>Mon rôle :</h3>
+            <p>Choix techniques, développement, intégration des données météo, interface et sécurité.</p>
+
+            <h3>Apports personnels :</h3>
+            <p>Progression en développement web, en architecture de composant et en gestion de projet.</p>
+            </section>
+
+            <footer>
+            <h2>Autres projets</h2>
+            <div class="other-projects">
+                <a href="projet-nutriscore.html">Nutriscore</a>
+                <a href="projet-sopra.html">Site Sopra</a>
+                <a href="projet-depeches.html">Depeches</a>
+                <a href="projet-word-excel.html">Word Excel</a>
+            </div>
+            </footer>
+        </main>
+    </body>
+</html>

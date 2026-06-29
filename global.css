@@ -1,0 +1,91 @@
+/* ==========================================
+   MODERN PORTFOLIO BASE
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a051b;      /* Deep midnight blue */
+  --bg-surface: #130c2a;      /* Lighter container background */
+  --accent: #66cc99;          /* Emerald mint accent */
+  --text-main: #f1f5f9;       /* Crisp white/slate text */
+  --text-muted: #94a3b8;      /* Elegant grey for descriptions */
+  --nav-height: 70px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {    
+  background-color: var(--bg-primary);
+  font-family: 'Inter', sans-serif;   
+  color: var(--text-main);
+  line-height: 1.6;
+  padding-top: calc(var(--nav-height) + 20px);
+}
+
+/* ==========================================
+   PREMIUM FROSTED HEADER
+   ========================================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Frosted glass effect (Glassmorphism) */
+  background: rgba(10, 5, 27, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(102, 204, 153, 0.1);
+}
+
+header nav {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Clean, traditional right-aligned nav */
+  gap: 30px;
+}
+
+header a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+header a img {
+  height: 18px;
+  width: auto;
+  filter: opacity(0.7) drop-shadow(0 0 0 var(--text-muted));
+  transition: all 0.25s ease;
+}
+
+/* Elegant Hover Interactions */
+header a:hover {
+  color: var(--accent);
+  background: rgba(102, 204, 153, 0.08);
+}
+
+header a:hover img {
+  filter: opacity(1) drop-shadow(0 0 4px var(--accent));
+  transform: translateY(-1px);
+}

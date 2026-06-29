@@ -1,0 +1,94 @@
+/* ==========================================
+   PROJET SPECIFIC STYLES
+   ========================================== */
+
+/* Main section container wrapper */
+body > section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Page Main Title */
+body > section > h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--text-main);
+  position: relative;
+}
+
+/* Optional subtle underline for a professional title look */
+body > section > h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
+/* Projects grid/list container */
+body > section > section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Modern spacing instead of heavy margins */
+}
+
+/* Individual Project Card Row */
+body > section > section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect to bring attention to the hovered project card */
+body > section > section > div:hover {
+  transform: translateY(-4px);
+  border-color: rgba(102, 204, 153, 0.3);
+}
+
+/* Text descriptions inside the project card */
+body > section > section > div > p {
+  width: 45%; /* Increased width for better text readability on desktop */
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Target bold items or titles inside your text for accent highlights */
+body > section > section > div > p strong,
+body > section > section > div > h2,
+body > section > section > div > h3 {
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Alternating rows layout for dynamic visual pacing */
+body > section > section > div:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+body > section > section > div:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+/* Clean Separator Line */
+.colored-line {
+  border: none;
+  height: 1px; /* Made slightly more visible than 0.1px to look like a clean grid line */
+  background: linear-gradient(90deg, transparent, rgba(102, 204, 153, 0.2), transparent);
+  margin: 40px 0;
+}
